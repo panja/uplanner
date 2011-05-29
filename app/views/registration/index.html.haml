@@ -1,0 +1,32 @@
+- form_for [@user], :url=> {:controller => :registration, :action => :create}, :html => { :class => "custom" } do |f|
+  %ol
+    %li
+      = f.label :first_name, "First Name: "
+      .details
+        = f.text_field :first_name, :size => 50
+    %li
+      = f.label :last_name, "Last Name: "
+      .details
+        = f.text_field :last_name, :size => 50
+    %li
+      = f.label :email, "Email: "
+      .details
+        = f.text_field :email, :size => 100
+    %li
+      = f.label :username, "Username: "
+      .details
+        = f.text_field :username, :class => "text"
+    %li
+      = f.label :password, "Password: "
+      .details
+        = f.password_field :password, :class => "text"
+    %li
+      = f.label :password_confirmation, "Password Repeat: "
+      .details
+        = f.password_field :password_confirmation, :class => "text"
+    %li
+      = f.label :role, "User Role: "
+      .details
+        = f.select(:role,options_for_select($options))
+    %li.actions
+      = f.submit "Register", :class => "button blue"

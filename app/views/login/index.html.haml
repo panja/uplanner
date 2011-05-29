@@ -1,0 +1,36 @@
+:css
+  #header{display:none;}
+.login
+  %h2.logo UPlanner
+  %h3.title.login Login to website
+  - if flash[:error]
+    %p.message= flash[:error]
+  -unless @error_message.nil?
+    %div.error
+      #{@error_message}
+  - form_tag({:controller => :login, :action => :index}, :class => "custom") do |f|
+    %ul.form
+      %li
+        .label
+          = label_tag :email, 'Email'
+          .link
+            %a{:href => '#', :title => "", :tabindex => '-1'} Forgot your email?
+        %input.field-text{:name => "login[username]", :type => "text", :value => "", :id => 'email'}
+      %li
+        .label
+          = label_tag :password, 'Password'
+          .link
+            %a{:href => '#', :title => '', :tabindex => '-1'} Forgot your password?
+        %input.field-text{:name => "login[password]", :type => "password", :value => ""}
+      %li
+        %button.button.login{:type => "submit"}
+          %span Login
+        %ul.checkboxes
+          %li
+            %input#remember-email{:name => "", :type => "checkbox", :value => ""}
+            %label{:for => "remember-email"} Remember email
+          %li
+            %input#keep-signed-in{:name => "", :type => "checkbox", :value => ""}
+            %label{:for => "keep-signed-in"} Keep me signed in
+  .copyright
+    Copyright &copy; 2011 UPlanner.com

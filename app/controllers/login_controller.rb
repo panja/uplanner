@@ -15,8 +15,6 @@ class LoginController < ApplicationController
           err += "invalid user account"
         elsif u.password != password
           err += "invalid password"
-        elsif !u.is_domain_admin
-          err += "normal users or not allowed"
         end
         if err.length > 0
           @error_message = "Invalid Username/Password combination: " + err || ""

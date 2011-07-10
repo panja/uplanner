@@ -10,7 +10,7 @@ gem 'mysql'
 # Use unicorn as the web server
 gem 'heroku'
 gem 'unicorn'
-gem 'mongrel'
+#gem 'mongrel'
 gem 'haml'
 # Deploy with Capistrano
 # gem 'capistrano'

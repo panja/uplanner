@@ -8,6 +8,7 @@ gem 'rails', '3.0.0'
 gem 'mysql'
 
 # Use unicorn as the web server
+gem 'heroku'
 gem 'unicorn'
 gem 'mongrel'
 gem 'haml'

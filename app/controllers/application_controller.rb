@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  layout "layout"
   helper :all
   protect_from_forgery
   before_filter :check_session

@@ -8,6 +8,7 @@ gem 'rails', '3.0.0'
 gem 'mysql'
 
 # Use unicorn as the web server
+gem 'heroku'
 gem 'unicorn'
 gem 'mongrel'
 gem 'haml'
@@ -15,8 +16,8 @@ gem 'haml'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug'
-gem 'ruby-debug-ide'
+#gem 'ruby-debug'
+#gem 'ruby-debug-ide'
 gem 'rake', '~> 0.8.7'
 # Bundle the extra gems:
 # gem 'bj'

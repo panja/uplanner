@@ -4,20 +4,29 @@
     %link{ :href => "/cmsfav.png", :rel => "shortcut icon", :type => "image/x-icon" }
     = stylesheet_link_tag "style.css"
     = javascript_include_tag "jquery-1.6.1.min"
+    = javascript_include_tag "application"
     = yield(:javascripts)
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-type"}
       %title
-        LiivMD
+        Uplan
         = yield(:header)
     %body
       #header
         .wrapper
           %h1#logo
-            = link_to 'LiivMedia', :controller => 'home'
+            = link_to 'Uplan', :controller => 'home'
       #content
         .wrapper
           %h2{:class => 'headline'}
           = yield
       #footer
-        .copyright Copyright © 2011 uplanner.com. All Rights Reserved.
-        .links
+        %nav#navigation
+          %ol.inner
+            %li.pages
+              %a{:href => ""} Projects
+            %li.authorities
+              %a{:href => ""} Developers
+            %li.logout
+              = link_to "Logout", {:controller => :login, :action => :logout}
+        -#.copyright Copyright © 2011 uplanner.com. All Rights Reserved.
+        -#.links

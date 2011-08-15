@@ -3,7 +3,7 @@ class CreateProjects < ActiveRecord::Migration
     create_table :projects do |t|
       t.column :title, :string, :limit => 50
       t.column :description, :string, :limit => 3000
-      t.column :author_id, :integer
+      t.column :user_id, :integer
       t.timestamps
     end
   end

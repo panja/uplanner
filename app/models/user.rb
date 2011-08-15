@@ -26,9 +26,14 @@ class User < ActiveRecord::Base
                       :with => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{1,3}$/i,
                       :message => "You did not enter your email in the proper format"
 
+  scope :developers, where(:role => "developer")
+  scope :customers, where(:role => "customer")
+
   $options = [
     ["Developer","developer"],
-    ["Customer","Customer"],
+    ["Customer","customer"],
     ["Admin","admin"]
   ];
+
+  belongs_to :project
 end

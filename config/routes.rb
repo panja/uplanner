@@ -4,6 +4,8 @@ Uplanner::Application.routes.draw do
   match 'logout' => 'login#logout'
   resources :registration
   resources :home
+  resources :projects
+  resources :users
   root :to => "home#index"
   
   # The priority is based upon order of creation:

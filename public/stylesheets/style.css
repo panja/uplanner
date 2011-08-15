@@ -31,19 +31,9 @@ div.login {left: 50%;margin-left: -190px;position: absolute;top: 100px;}
 
 
 #navigation {
-/*    -moz-box-shadow: 0 3px 6px #CCCCCC;
-    background: none repeat scroll 0 0 #DDDDDD;
-    border-color: #DDDDDD -moz-use-text-color;
-    border-style: solid none;
-    border-width: 2px 0;
-    margin-top: 30px;
-    padding: 12px;
-    display: block;
-    position: absolute;
-    height: 50px;*/
-    background: url("/images/panel.png") no-repeat scroll 285px 0 transparent;
-    bottom: 0;
-    height: 55px;
+    background-color: #314B66;
+    top: 0;
+    height: 25px;
     left: 0;
     position: absolute;
     width: 100%;
@@ -55,15 +45,24 @@ div.login {left: 50%;margin-left: -190px;position: absolute;top: 100px;}
 }
 #navigation li {
     display: inline-block;
+    margin-left: 5px;
 }
+#navigation li a {
+    color: #18ABCF;
+}
+#navigation li a:hover {
+    color: #e3ecef;
+}
+
+/*
 #navigation li.logout a{
     background: url("/images/power.png") no-repeat scroll 0 0 transparent;
     height: 45px;
-    text-indent: 1000px;
+    text-indent: -1000px;
     width: 50px;
     display: block;
     background-position: 0 -44px;
 }
 #navigation li.logout a:hover{
     background-position: 0 0;
-}
+}*/

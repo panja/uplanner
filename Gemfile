@@ -1,16 +1,15 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql'
-
 # Use unicorn as the web server
 gem 'heroku'
 gem 'unicorn'
-#gem 'mongrel'
+gem 'mongrel'
 gem 'haml'
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -18,7 +17,7 @@ gem 'haml'
 # To use debugger
 #gem 'ruby-debug'
 #gem 'ruby-debug-ide'
-gem 'rake', '~> 0.8.7'
+gem 'rake', '0.9.2'
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
